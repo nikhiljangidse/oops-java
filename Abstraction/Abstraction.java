@@ -44,6 +44,7 @@ class Circle extends Shape{
         System.out.println("Enter radius of circle: ");
 
         int radius = Integer.parseInt(in.nextLine());
+        in.close();
         System.out.println("Area of Circle: " + 3.14 * radius * radius);
     }
 
@@ -59,11 +60,12 @@ class Triangle extends Shape{
         Scanner in = new Scanner(System.in);
         System.out.println("Enter base of Triangle: ");
         int base = Integer.parseInt(in.nextLine());
+        in.close();
 
         Scanner in2 = new Scanner(System.in);
         System.out.println("Enter height of Triangle: ");
         int height = Integer.parseInt(in2.nextLine());
-
+        in2.close();
         System.out.println("Area of Triangle: " + 0.5 * base * height);
     }
 
@@ -84,6 +86,7 @@ class PerformAction{
         System.out.print("Please enter your choice: ");
 
         String input = userInput.nextLine();
+        userInput.close();
 
         switch(input){
             case "1":
