@@ -1,0 +1,10 @@
+Overriding is a feature that allows a child class to provide an specific implementation of a method that is already provided in parent class.
+
+#Rules of method overriding:
+1. Private methods of super class can not be overridden.
+2. Protected methods can be made as public but not private in override.
+3. Final methods cannot be overridden.
+4. Static methods cannot be overridden.
+5. The overriding method must have the same return type.
+6. super keyword is used to invoke overridden method.
+7. We cannot override the constructor.
